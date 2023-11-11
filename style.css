@@ -1,0 +1,158 @@
+html {
+  text-size-adjust: 100%;
+  font-size: 2vw;
+  display: block;
+}
+
+@media (max-width: 400px) {
+  html {
+    text-size-adjust: 100%;
+    font-size: 5vw;
+  }
+}
+
+body {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.hero {
+  height: 90vh;
+  position: relative;
+}
+
+.hero video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero > div {
+  position: absolute;
+  left: 10vw;
+  top: 30vh;
+  color: #fff;
+  width: 500px;
+  padding: 1rem;
+  border-radius: 20px;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(5px);
+}
+
+.down {
+  font-size: 5rem;
+  position: absolute;
+  left: 50%;
+  right: 50%;
+  bottom: 50px;
+  /* transform: rotate(90deg); */
+  animation: godown 1s infinite;
+}
+
+@keyframes godown {
+  0% {
+    left: 50%;
+    right: 50%;
+    bottom: 80px;
+  }
+
+  50% {
+    left: 50%;
+    right: 50%;
+    bottom: 20px;
+  }
+
+  100% {
+    left: 50%;
+    right: 50%;
+    bottom: 80px;
+  }
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+.navbar {
+  background: rgba(0, 0, 0, 1);
+  color: #fff;
+  position: sticky;
+  top: 0;
+}
+
+nav > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.3rem;
+  padding: 0.5rem 0;
+}
+
+.menu > ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+.menu > ul > li a {
+  margin-left: 1rem;
+  text-decoration: none;
+  color: #fff;
+}
+
+.menu > ul > li:hover {
+  color: red;
+  transform: scale(1.3rem);
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+/* IMAGES */
+
+[class^="img"] {
+  height: 70vh;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img1 {
+  background: url(../assets/1.jpg) no-repeat center;
+  background-attachment: fixed;
+}
+
+.img2 {
+  background: url(../assets/2.jpg) no-repeat center;
+  background-attachment: fixed;
+}
+
+.img3 {
+  background: url(../assets/3.jpg) no-repeat center;
+  background-attachment: fixed;
+}
+
+.img4 {
+  background: url(../assets/4.jpg) no-repeat center;
+  background-attachment: fixed;
+}
+.title {
+  background: black;
+  color: white;
+  font-size: 2rem;
+  padding: 1.5rem 5rem;
+  border-radius: 5px;
+  letter-spacing: 10pt;
+}
+
+.footer {
+  background: black;
+  color: grey;
+  font-size: 1.5rem;
+  padding: 2rem;
+  text-align: center;
+}
